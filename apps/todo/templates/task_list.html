@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+<main class="contauner">
+    <div class="row">
+        <div class="col">
+            {% block content %}
+                {% for task in object_list %}
+{##}
+{#                    <article class="post">#}
+{#                        <time class="date">#}
+{#                            {{ task.due_date }}#}
+{#                        </time>#}
+                        <h2><a href="{{ task.get_absolute_url }}"> {{ task.title }} </a></h2>
+{#                        <h2><a href="{% url 'task_detail' pk=task.pk %}">{{ task.title }}</a></h2>#}
+{#                        <p>{{ task.description|linebreaksbr }}</p>#}
+{#                    </article>#}
+                {% endfor %}
+            {% endblock %}
+        </div>
+    </div>
+</main>
+

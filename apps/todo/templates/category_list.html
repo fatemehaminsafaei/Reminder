@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<div class="Table">
+    <table>
+        <th >Categories</th>
+        {% for category in categories_list %}
+            <tr>
+                <td><a href=""> {{ category.name }} </a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

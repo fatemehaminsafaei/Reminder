@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="Table">
+        <table>
+            <th>Task : {{ Lists.name }}</th>
+            {% for task in Lists.task_set.all %}
+                <tr>
+                    <td>{{ task.title | title }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock %}

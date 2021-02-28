@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    background-color: peachpuff;
+}
+
+
+.page-header {
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
+}
+
+
+/* The sidebar menu */
+.container .row .col .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: darkred ;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gold;
+  display: block;
+
+    margin-top: 100px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.sidebar {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    border-right: 2px solid darkslategrey;
+
+
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+
+}
+
+.sidebar a.active {
+    background-color: midnightblue;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: darkseagreen;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.sidebar-two {
+    margin-left: 200px;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #f1f1f1;
+    border-right: 2px solid darkslategrey;
+
+
+}
+
+.sidebar-two a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar-two a.active {
+    background-color: midnightblue;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-two a:hover:not(.active) {
+    background-color: darkseagreen;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.sidebar-three {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    margin-left: 400px;
+    border-right: 2px solid darkslategrey;
+
+
+}
+
+.sidebar-three a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar-three a.active {
+    background-color: midnightblue;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-three a:hover:not(.active) {
+    background-color: darkseagreen;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.sidebar-four {
+    margin-top: 0;
+
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+
+    margin-left: 600px;
+    border-right: 2px solid darkslategrey;
+
+}
+
+.sidebar-four a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar-four a.active {
+    background-color: midnightblue;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-four a:hover:not(.active) {
+    background-color: darkseagreen;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .sidebar-two .sidebar-three .sidebar-four h4{
+    color: #0e3b10;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+        text-decoration: none;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar-three {
+        width: 30%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar-two a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar-two a {
+        text-align: center;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar-three {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar-three a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar-three a {
+        text-align: center;
+        float: none;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .sidebar-four {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar-three a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar-four a {
+        text-align: center;
+        float: none;
+    }
+}
